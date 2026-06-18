@@ -28,4 +28,4 @@ export const Order = model('Order', new Schema({
       }
     }]
   }
-}))
+}));
