@@ -15,6 +15,6 @@ mongoose.connect('mongodb://localhost:27017')
       console.log(`🚀 Server is running on http://localhost:${port}`);
     });
 
-    console.log('Conectado ao MongoDB.')
+    console.log('Conectado ao MongoDB.');
   })
-  .catch(() => console.log('Erro ao tentar conectar com o MongoDB.'))
+  .catch(() => console.log('Erro ao tentar conectar com o MongoDB.'));
