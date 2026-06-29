@@ -1,6 +1,6 @@
 import type { Request, Response } from 'express';
 
-import { Category } from '../../models/Category.ts';
+import { Category } from '../../models/Category';
 
 export async function createCategory(req: Request, res: Response) {
   try {
