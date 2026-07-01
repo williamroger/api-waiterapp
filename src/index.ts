@@ -2,7 +2,7 @@ import path from 'node:path';
 import express from 'express';
 import mongoose from 'mongoose';
 
-import { router } from './router';
+import { router } from './router.ts';
 
 const currentDir = import.meta.dirname;
 

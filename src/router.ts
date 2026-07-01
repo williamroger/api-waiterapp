@@ -1,17 +1,17 @@
 import { Router } from 'express';
-import path  from 'node:path';
+import path from 'node:path';
 
 import multer from 'multer';
 
-import { listCategories } from './app/useCases/categories/listCategories';
-import { createCategory } from './app/useCases/categories/createCategory';
-import { listProducts } from './app/useCases/products/listProducts';
-import { createProduct } from './app/useCases/products/createProducts';
-import { listProductsByCategory } from './app/useCases/categories/listProductsByCategory';
-import { listOrders } from './app/useCases/orders/listOrders';
-import { createOrder } from './app/useCases/orders/createOrder';
-import { changeOrderStatus } from './app/useCases/orders/changeOrderStatus';
-import { cancelOrder } from './app/useCases/orders/cancelOrder';
+import { listCategories } from './app/useCases/categories/listCategories.ts';
+import { createCategory } from './app/useCases/categories/createCategory.ts';
+import { listProducts } from './app/useCases/products/listProducts.ts';
+import { createProduct } from './app/useCases/products/createProducts.ts';
+import { listProductsByCategory } from './app/useCases/categories/listProductsByCategory.ts';
+import { listOrders } from './app/useCases/orders/listOrders.ts';
+import { createOrder } from './app/useCases/orders/createOrder.ts';
+import { changeOrderStatus } from './app/useCases/orders/changeOrderStatus.ts';
+import { cancelOrder } from './app/useCases/orders/cancelOrder.ts';
 
 export const router = Router();
 
