@@ -7,9 +7,9 @@ export async function changeOrderStatus(req: Request, res: Response) {
     const { orderId } = req.params;
     const { status } = req.body;
 
-    if (!['WAITING', 'IN_PRODCTION', 'DONE'].includes(status)) {
+    if (!['WAITING', 'IN_PRODUCTION', 'DONE'].includes(status)) {
       return res.status(400).json({
-        error: 'Status should be one of these: WAITING, IN_PRODCTION, DONE'
+        error: 'Status should be one of these: WAITING, IN_PRODUCTION, DONE'
       });
     }
 
